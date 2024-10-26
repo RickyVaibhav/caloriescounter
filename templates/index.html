@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Calorie Counter</h1>
+        <div id="food-form">
+            <h3>Enter Food Items and Quantities</h3>
+            <div id="food-items">
+                <!-- Initial Food Item Input -->
+                <div class="food-item">
+                    <input type="text" placeholder="Food name" class="food-name" required>
+                    <input type="number" placeholder="Quantity" class="food-quantity" min="1" required>
+                </div>
+            </div>
+            <button id="add-item">Add More Food</button>
+            <button id="calculate">Calculate Calories</button>
+        </div>
+
+        <div id="result">
+            <h3>Total Calories: <span id="total-calories"></span></h3>
+        </div>
+
+        <div id="food-list">
+            <h3>Previous Entries:</h3>
+            <ul id="food-log"></ul>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

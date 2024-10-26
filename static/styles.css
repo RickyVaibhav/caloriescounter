@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url('/static/images/background.jpg'); /* Adjust path if necessary */
+    background-size: cover; /* Cover the entire page */
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: #333;
+}
+
+h1 {
+    color: #fff; /* Change text color to white for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Adds shadow for better readability */
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#food-form {
+    margin-bottom: 20px;
+}
+
+.food-item {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#food-log {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#food-log li {
+    padding: 5px 0;
+    font-size: 16px;
+}
